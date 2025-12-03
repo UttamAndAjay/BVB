@@ -1,11 +1,10 @@
-/* --- CSS VARIABLES & RESET --- */
 :root {
-    --bvb-dark: #023020; /* Main Theme Color */
-    --bvb-accent: #1a4b24; /* Title/Accent Color */
+    --bvb-dark: #023020;
+    --bvb-accent: #1a4b24;
     --text-dark: #333;
     --text-light: #f4f4f4;
     --bg-light: #f9f9f9;
-    --card-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Subtle shadow like the reference */
+    --card-shadow: 0 4px 10px rgba(0,0,0,0.05);
     --transition: all 0.3s ease;
 }
 
@@ -26,7 +25,6 @@ body {
     line-height: 1.6;
 }
 
-/* --- NAVIGATION --- */
 header {
     background: rgb(18,36,23);
     padding: 9px 5%;
@@ -65,7 +63,6 @@ nav a:hover {
     color: white; 
 }
 
-/* --- HERO SECTION --- */
 #home {
     position: relative;
     height: 80vh;
@@ -83,7 +80,7 @@ nav a:hover {
 
 .hindi-text {
     font-family: 'Noto Serif Devanagari', serif;
-    color: #e4552c; /* same orange color as your image */
+    color: #e4552c;
     font-size: 38px;
     font-weight: 600;
 }
@@ -101,13 +98,11 @@ nav a:hover {
     font-size: 1.2rem;
 }
 
-/* --- SHARED SECTION STYLES --- */
 section {
     padding: 60px 5%;
     overflow: hidden;
 }
 
-/* Standard Section Title (for non-school parts) */
 .section-title {
     text-align: center;
     margin-bottom: 40px;
@@ -126,16 +121,16 @@ section {
     border-radius: 1.5px;
 }
 
-/* --- SCHOOLS SECTION (Specific to match image) --- */
+
 .schools-header-container {
-    text-align: left; /* Image alignment */
+    text-align: left;
     margin-bottom: 30px;
 }
 
 .schools-label {
     display: block;
     font-size: 0.9rem;
-    color: #122417; /* Dark gray for label */
+    color: #122417;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -144,14 +139,14 @@ section {
 
 .schools-main-title {
     font-size: 2.5rem;
-    color: var(--bvb-accent); /* Green title */
+    color: var(--bvb-accent);
     font-weight: 700;
     margin: 0;
 }
 
 .schools-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* 4 cards fit */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
 }
 
@@ -159,10 +154,9 @@ section {
     background: white;
     border-radius: 25px;
     overflow: hidden;
-    /* Clean flat look initially */
     box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
     transition: all 0.3s ease;
-    border: 1px solid #eee; /* Very subtle border */
+    border: 1px solid #eee;
 }
 
 .school-card:hover {
@@ -172,7 +166,7 @@ section {
 
 .school-card img {
     width: 100%;
-    height: 200px; /* Standard aspect ratio */
+    height: 200px;
     object-fit: cover;
 }
 
@@ -182,11 +176,11 @@ section {
 }
 
 .school-info h3 {
-    color: #222; /* Black/Dark text title */
+    color: #222;
     margin-bottom: 5px;
     font-size: 1.1rem;
     font-weight: 700;
-    white-space: nowrap; /* Truncate if too long like in image */
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -205,7 +199,6 @@ section {
     line-height: 1.5;
 }
 
-/* --- ABOUT (COMMITTEE) --- */
 .committee-grid {
     display: flex;
     justify-content: center;
@@ -243,21 +236,18 @@ section {
     border-color: var(--bvb-accent);
 }
 
-/* CSS Code to add */
 .member-card a {
     color: #ff5524;
   text-decoration: none;
 }
 
-
-/* --- NUMBERS SECTION (UPDATED TO MATCH IMAGE) --- */
 #numbers {
     position: relative;
     background: linear-gradient(rgba(26, 75, 36, 0.5), rgba(0,0,0,0.7)), url('https://assets.bvbpune.org/pune-kendra/our-story.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 0; /* Remove default section padding to allow overlay to fill */
+    padding: 0;
 }
 
 .numbers-overlay {
@@ -281,9 +271,9 @@ section {
 }
 
 .number-item h2 {
-    font-size: clamp(2.5rem, 6vw, 4rem); /* Large, responsive number font */
+    font-size: clamp(2.5rem, 6vw, 4rem);
     font-weight: 800;
-    color: var(--bvb-orange); /* Use BVB Orange for numbers */
+    color: var(--bvb-orange);
     margin-bottom: 10px;
     transition: transform 0.3s ease;
 }
@@ -300,7 +290,6 @@ section {
     transform: scale(1.1);
 }
 
-/* --- DYNAMIC WIDGETS --- */
 .widgets-wrapper {
     background: #eef2f5;
 }
@@ -309,7 +298,6 @@ section {
     margin-bottom: 50px;
 }
 
-/* --- WEATHER CARD --- */
 .weather-card {
     background: white;
     padding: 30px;
@@ -423,7 +411,6 @@ section {
     color: var(--text-dark);
 }
 
-/* AQI Badge Styles */
 .aqi-badge {
     padding: 3px 10px;
     border-radius: 20px;
@@ -433,8 +420,6 @@ section {
 }
 .aqi-badge.loading { background: #999; }
 
-
-/* --- NEWS CARDS --- */
 .news-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -496,8 +481,6 @@ section {
     margin-top: 5px;
 }
 
-
-/* --- FINANCE CARDS --- */
 .finance-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -546,7 +529,7 @@ section {
     line-height: 1.2;
 }
 
-/* Distinct Colors */
+
 .finance-card[data-item="Gold"] .finance-icon { background: linear-gradient(45deg, #FFD700, #DAA520); } 
 .finance-card[data-item="Silver"] .finance-icon { background: linear-gradient(45deg, #C0C0C0, #A9A9A9); } 
 .finance-card[data-item="Bitcoin"] .finance-icon { background: linear-gradient(45deg, #F7931A, #FFA000); } 
@@ -554,7 +537,6 @@ section {
 .finance-card[data-item="EUR"] .finance-icon { background: linear-gradient(45deg, #1E88E5, #64B5F6); } 
 
 
-/* --- CONTACT 1 (FORM) --- */
 .contact-form-container {
     max-width: 600px;
     margin: 0 auto;
@@ -605,9 +587,8 @@ section {
     background-color: var(--bvb-accent);
 }
 
-/* Footer Container */
         .footer-section {
-            background-color: rgb(18,36,23); /* Dark Forest Green from image */
+            background-color: rgb(18,36,23);
             color: #ffffff;
             padding: 60px 40px 20px 40px;
             font-size: 14px;
@@ -616,14 +597,13 @@ section {
 
         .footer-content {
             display: grid;
-            grid-template-columns: 1.2fr 1fr 1fr 1fr; /* 4 Columns */
+            grid-template-columns: 1.2fr 1fr 1fr 1fr;
             gap: 40px;
             max-width: 1400px;
             margin: 0 auto;
             margin-bottom: 60px;
         }
 
-        /* Column 1: Brand & Logo */
         .brand-col {
             display: flex;
             flex-direction: column;
@@ -635,7 +615,6 @@ section {
             width: 100px;
             height: 100px;
             margin-bottom: 5px;
-            /* Placeholder styling if no image matches */
             filter: brightness(0) invert(1); 
             object-fit: contain;
         }
@@ -654,7 +633,6 @@ section {
             margin-bottom: 25px;
         }
 
-        /* Generic Column Styling */
         h4 {
             font-size: 18px;
             font-weight: 600;
@@ -662,7 +640,6 @@ section {
             color: #ffffff;
         }
 
-        /* Column 2: Schools List */
         .school-list {
             list-style: none;
         }
@@ -676,7 +653,7 @@ section {
         .school-list li i {
             margin-right: 12px;
             font-size: 14px;
-            margin-top: 4px; /* Align icon with text */
+            margin-top: 4px;
             color: #b0b0b0;
         }
 
@@ -690,7 +667,6 @@ section {
             text-decoration: underline;
         }
 
-        /* Columns 3 & 4: Contact Info */
         .contact-info p {
             margin-bottom: 15px;
             color: #e0e0e0;
@@ -701,25 +677,22 @@ section {
             text-decoration: none;
         }
 
-        /* Copyright Section */
         .copyright {
             text-align: center;
             padding-bottom: 5px;
             color: #cccccc;
             font-size: 14px;
-            /* border-top: 1px solid rgba(255,255,255,0.1); Optional if needed */
         }
 
-        /* Responsive Design */
         @media (max-width: 1024px) {
             .footer-content {
-                grid-template-columns: 1fr 1fr; /* 2x2 grid */
+                grid-template-columns: 1fr 1fr;
             }
         }
 
         @media (max-width: 768px) {
             .footer-content {
-                grid-template-columns: 1fr; /* Single column */
+                grid-template-columns: 1fr;
                 text-align: center;
             }
             
@@ -728,7 +701,6 @@ section {
             }
         }
 
-/* --- Responsive Adjustments --- */
 @media (max-width: 768px) {
     header { 
         flex-direction: column; 
@@ -755,7 +727,6 @@ section {
         flex-direction: column;
     }
 
-    /* Adjust weather details on small screens */
     .weather-main {
         flex-direction: column;
         gap: 10px;
