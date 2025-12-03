@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <!-- 1. Header with Logo & 14. Navigation -->
     <header>
         <div class="logo">
             <a href="javascript:void(0)" onclick="location.reload()">
@@ -29,15 +27,11 @@
         </nav>
     </header>
 
-    <!-- 2 & 3. Hero Section (Thought Part) -->
     <section id="home">
         <h1 class="hindi-text">“आ नो भद्राः क्रतवो यन्तु विश्वतः!”</h1>
         <h1>LET NOBLE THOUGHTS COME FROM EVERY SIDE.</h1>
     </section>
 
-    
-
-    <!-- 5. Schools Part -->
     <section id="schools">
         <div class="schools-header-container">
             <span class="schools-label">BVB PUNE KENDRA</span>
@@ -45,7 +39,6 @@
         </div>
         
         <div class="schools-grid">
-            <!-- Card 1: Chhabria Nursery School -->
             <div class="school-card">
                 <img src="https://bvbpune.org/images/schools/chhabrianurseryschool.jpeg" alt="Chhabria Nursery School" onerror="this.src='https://placehold.co/600x400/eee/333?text=Chhabria+Nursery'">
                 <div class="school-info">
@@ -55,7 +48,6 @@
                 </div>
             </div>
 
-            <!-- Card 2: Sulochana Natu Vidya Mandir -->
             <div class="school-card">
                 <img src="https://bvbpune.org/images/schools/sulochananatuvidyamandir.jpeg" alt="Sulochana Natu Vidya Mandir" onerror="this.src='https://placehold.co/600x400/eee/333?text=Sulochana+Natu'">
                 <div class="school-info">
@@ -65,7 +57,6 @@
                 </div>
             </div>
 
-            <!-- Card 3: Paranjape Nursery School -->
             <div class="school-card">
                 <img src="https://bvbpune.org/images/schools/paranjapenurseryschool.jpeg" alt="Paranjape Nursery School" onerror="this.src='https://placehold.co/600x400/eee/333?text=Paranjape+Nursery'">
                 <div class="school-info">
@@ -75,7 +66,6 @@
                 </div>
             </div>
 
-            <!-- Card 4: Paranjape Vidya Mandir -->
             <div class="school-card">
                 <img src="https://bvbpune.org/images/schools/paranjapevidyamandir.jpeg" alt="Paranjape Vidya Mandir" onerror="this.src='https://placehold.co/600x400/eee/333?text=Paranjape+Vidya'">
                 <div class="school-info">
@@ -87,7 +77,6 @@
         </div>
     </section>
 
-    <!-- 6. About Part (Committee) -->
     <section id="about" style="background-color: #f0f0f0;">
         <h2 class="section-title">Pune Kendra Committee</h2>
         <div class="committee-grid">
@@ -95,24 +84,23 @@
                 <img src="https://assets.bvbpune.org/pune-kendra/committee/Leena+Mehendale.jpg" alt="Smt. Leena Mehendale, IAS (Retd.)">
                 <h3>Smt. Leena Mehendale, IAS (Retd.)</h3>
                 <p>CHAIRPERSON</p>
-                <a href="lmbvb100@gmail.com">lmbvb100@gmail.com</a>
+                <a href="mailto:lmbvb100@gmail.com">lmbvb100@gmail.com</a>
             </div>
             <div class="member-card">
                 <img src="https://assets.bvbpune.org/pune-kendra/committee/Vijayam%2BKartha.jpg" alt="Mrs. Vijayam Kartha">
                 <h3>Mrs. Vijayam Kartha</h3>
                 <p>VICE - CHAIRPERSON</p>
-                <a href="vijayam.kartha@yahoo.com">vijayam.kartha@yahoo.com</a>
+                <a href="mailto:vijayam.kartha@yahoo.com">vijayam.kartha@yahoo.com</a>
             </div>
             <div class="member-card">
                 <img src="https://assets.bvbpune.org/pune-kendra/committee/Nandkumar+Kakirde.jpg" alt="Prof. Nandkumar Kakirde">
                 <h3>Prof. Nandkumar Kakirde</h3>
                 <p>DIRECTOR AND HON. SECRETARY</p>
-                <a href="nandkumar.kakirde@gmail.com">nandkumar.kakirde@gmail.com</a>
+                <a href="mailto:nandkumar.kakirde@gmail.com">nandkumar.kakirde@gmail.com</a>
             </div>
         </div>
     </section>
 
-    <!-- 7. Numbers Part (UPDATED TO MATCH IMAGE) -->
     <section id="numbers">
         <div class="numbers-overlay">
             <h2 class="section-title" style="color:white;">BVB Pune Kendra by the Numbers</h2>
@@ -133,10 +121,7 @@
         </div>
     </section>
 
-    <!-- 8, 9, 10. Dynamic Widgets Section -->
     <section class="widgets-wrapper">
-        
-        <!-- 8. Weather Widget (Title Changed) -->
         <div class="widget-row">
             <h2 class="section-title">Weather</h2>
             <div class="weather-card"> 
@@ -146,7 +131,6 @@
                 </div>
                 
                 <div class="weather-main">
-                    <!-- Icon will be inserted here by JS -->
                     <div id="weather-icon" class="weather-icon-large"><i class="fas fa-sync fa-spin"></i></div> 
                     <div class="temp-display"><span id="temp-val">--</span>°C</div>
                 </div>
@@ -167,7 +151,6 @@
                         <i class="fas fa-lungs"></i>
                         <div>
                             <span class="detail-label">Air Quality (AQI)</span>
-                            <!-- AQI Badge for color coding -->
                             <span class="detail-value" id="aqi-val"><span class="aqi-badge loading">Loading</span></span>
                         </div>
                     </div>
@@ -175,7 +158,6 @@
             </div>
         </div>
 
-        <!-- 9. News Widget -->
         <div class="widget-row" id="news-row">
             <h2 class="section-title">Latest News</h2>
             <div class="news-grid" id="news-container">
@@ -190,11 +172,9 @@
             </div>
         </div>
 
-        <!-- 10. Values (Finance) Widget -->
         <div class="widget-row" id="finance-row">
             <h2 class="section-title">Market Values</h2>
             <div class="finance-grid" id="finance-container">
-                <!-- Placeholder Card -->
                 <div class="finance-card">
                     <div class="finance-icon"><i class="fas fa-spinner fa-spin"></i></div>
                     <h4>Loading...</h4>
